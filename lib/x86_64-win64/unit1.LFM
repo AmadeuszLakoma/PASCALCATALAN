@@ -1,0 +1,99 @@
+object Form1: TForm1
+  AnchorSideRight.Side = asrBottom
+  AnchorSideBottom.Side = asrBottom
+  Left = 83
+  Height = 328
+  Top = 246
+  Width = 455
+  HorzScrollBar.Page = 435
+  VertScrollBar.Page = 47
+  ActiveControl = WEJSCIE_N
+  Align = alCustom
+  Anchors = [akTop, akLeft, akRight, akBottom]
+  AutoScroll = True
+  Caption = 'Liczby Catalana'
+  ClientHeight = 308
+  ClientWidth = 455
+  Icon.Data = {
+    9200000000000100010006030000010020007C00000016000000280000000600
+    0000060000000100200000000000480000006400000064000000000000000000
+    0000000000FFFFFFFFFF000000FF000000FF060606FFFFFFFFFF050505FF0000
+    00FFFDFDFDFF060606FFFCFCFCFF000000FF000000FF000000FF070707FFFCFC
+    FCFF000000FF030303FF0020203C016469740372496E
+  }
+  Menu = MainMenu1
+  LCLVersion = '1.6.4.0'
+  Visible = True
+  WindowState = wsMaximized
+  object RYSUJ: TButton
+    Left = 88
+    Height = 26
+    Top = 0
+    Width = 51
+    Caption = 'RYSUJ'
+    OnClick = RYSUJClick
+    TabOrder = 0
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 285
+    Width = 455
+    Panels = <>
+  end
+  object WEJSCIE_N: TEdit
+    Left = 0
+    Height = 23
+    Top = 0
+    Width = 80
+    OnChange = WEJSCIE_NChange
+    TabOrder = 2
+    Text = 'PODAJ N'
+  end
+  object KOMUNIKAT: TLabel
+    Left = 8
+    Height = 15
+    Top = 32
+    Width = 9
+    Caption = 'N'
+    ParentColor = False
+  end
+  object NASTEPNE: TButton
+    Left = 360
+    Height = 25
+    Top = 1
+    Width = 75
+    Caption = 'NASTEPNE'
+    OnClick = NASTEPNEClick
+    TabOrder = 3
+  end
+  object POPRZEDNIE: TButton
+    Left = 272
+    Height = 25
+    Top = 1
+    Width = 75
+    Caption = 'POPRZEDNIE'
+    OnClick = POPRZEDNIEClick
+    TabOrder = 4
+  end
+  object ZAPISJPEG: TButton
+    Left = 152
+    Height = 25
+    Top = 1
+    Width = 105
+    Caption = 'Zapisz do pliku jpeg'
+    OnClick = ZAPISJPEGClick
+    TabOrder = 5
+  end
+  object MainMenu1: TMainMenu
+    left = 448
+    object MenuItem1: TMenuItem
+      Caption = 'Zakoncz'
+      OnClick = MenuItem1Click
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'O...'
+      OnClick = MenuItem2Click
+    end
+  end
+end
